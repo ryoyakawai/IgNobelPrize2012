@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SpeechJammer - Acoustics Prize Simulator of  Ig Nobel Prize 2012 | HTML5</title>
+    <link rel="stylesheet" href="css/jquery-ui.all.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/Ig2012.css" rel="stylesheet" type="text/css">
+    <style>
+      body { padding-top: 60px; } /* 60px to make the container go all the way to the bottom of the topbar */
+    </style>
+    <script type="text/javascript">
+      try {
+        var context = new webkitAudioContext();
+      } catch(e) {
+        alert('Use Chrome Canary (> 24.0.1273.0) on Mac.(as is 2012/09/22)');
+      }
+    </script>
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">HTML5</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="container">
+        <h1>SpeechJammer (Ig Nobel Prize 2012 Acoustics Prize) with HTML5</h1>
+
+								<div style="clear: both;">	</div>
+
+        <p>This Simulator simulate Acoustics Prize in Ig Nobel Prize 2012 by Web Audio API and Web RTC(getUserMeida()).<br>
+          Here is an official explanation of the prize.
+          Visit <a href="http://www.improbable.com/ig/winners/#ig2011" target="_blank">here</a> to see for more Ig Nobel Prize 2012 informations.<br>
+        </p>
+        <blockquote>
+          <p><b>ACOUSTICS PRIZE</b>: 
+            Kazutaka Kurihara and Koji Tsukada [JAPAN] for creating the SpeechJammer -
+            a machine that disrupts a person's speech, by making them hear their own spoken words at a very slight delay.
+            <small>
+              REFERENCE: "SpeechJammer: A System Utilizing Artificial Speech Disturbance with Delayed Auditory Feedback", Kazutaka Kurihara, Koji Tsukada, arxiv.org/abs/1202.6106. February 28, 2012.
+              ATTENDING THE CEREMONY: Kazutaka Kurihara and Koji Tsukada
+            </small>
+        </blockquote>
+      </div> <!-- /container -->
+
+      <div class="container">
+        <div>
+          <input type="button" class="jamOn btn btn-danger" value="On">
+        </div>
+
+        <div class="speanaArea">
+          <span class="live"></span>
+          <span class="spectrum">Spectrum Analyser</span>
+          <canvas class="canvasMeter" id="audioStream" width="300" height="225"></canvas>
+        </div>
+
+        <div class="sliderArea">
+          <div class="delayA"><span class="badge">Delay</span></div>
+          <div class="delayA"><div class="delaySec">0 Sec.</div></div>
+          <div class="delayA"><div id="delaySlider"></div></div>
+        </div>
+
+      </div> <!-- /container -->
+
+      <div class="container">
+        <dl>
+          <dt>How to play with this toy.</dt>
+          <dd>Push the "On" button to start simulator. With the right slider you can change delay time.<br>
+            The prize says 0.2 seconds is the best delay for jamming.<br>
+          Have fan!!!</dd>
+        </dl>
+      </div>
+
+      <dl>
+        <dt>System Requirements:</dt>
+        <dd>Machintosh</dd>
+        <dd>Google Chrome Canary and the version must be higher than 24.0.1273.0</dd>
+        <dd>"Web Audio Input" is enable in chrome://flags</dd>
+        <dd>If this simulator does not do anything, check <a href="check.html" target="_blank">this page</a>.</dd>
+      </dl>
+
+       <hr>
+
+      <footer>
+        <p>Copyright (c) 2012 Ryoya KAWAI. All rights reserved.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/Ig2012.js"></script>
+    <script type="text/javascript" src="js/canvasMeter.js"></script>
+    <script type="text/javascript" src="js/socialite.min.js"></script>
+    <script type="text/javascript">Socialite.load();</script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31901806-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

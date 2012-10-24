@@ -1,0 +1,67 @@
+.speanaArea {
+  margin: 10px 10px 10px 10px;
+	background: #fff5ee;
+	border-style:solid; 
+  border-width:1px; 
+  width:300px; 
+  height:225px;
+
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+.live {
+  position: absolute;
+  z-index: 1;
+  color: red;
+  font-weight: 600;
+  font-family: Arial;
+  font-size: 13pt;
+  right: 5px;
+  top: 2px;
+  text-shadow: 1px 1px white;
+  letter-spacing: 1px;
+}
+
+.spectrum {
+  position: absolute;
+  z-index: 1;
+  color: ffe4c4;
+  font-weight: 600;
+  font-family: Arial;
+  font-size: 13pt;
+  left: 65px;
+  top: 100px;
+  text-shadow: 1px 1px black;
+  letter-spacing: 1px;
+}
+
+.sliderArea {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width:75px; 
+  height:255px;
+}
+
+.delaySec {
+  margin: 2px 0px 2px 0px;
+  font-size: 13px;
+  height: 24px;
+}
+
+.delayA {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+
+  width:70px; 
+}
+
+#delaySlider {
+  margin: 0px 0px 0px 0px;
+  height: 187px;
+}
