@@ -1,3 +1,6 @@
+// Copyright (c) 2012 Ryoya KAWAI. All rights reserved.
+
+
 var IgNobel = function() {
 
   return {
