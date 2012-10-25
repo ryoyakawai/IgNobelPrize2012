@@ -1,5 +1,5 @@
-// Copyright (c) 2012 Ryoya KAWAI. All rights reserved.
-
+/*! Ig2012.js - v1.0 - 2012-10-25
+ * Copyright (c) 2012 Ryoya KAWAi; Licensed MIT, GPL */ 
 
 var IgNobel = function() {
 

@@ -1,3 +1,6 @@
+/*! Ig2012.js - v1.0 - 2012-10-25
+ * Copyright (c) 2012 Ryoya KAWAi; Licensed MIT, GPL */ 
+
 var CanvasMeter = function( analyserNode, analyserNodeCanvas ) {
 		var rafID = null;
 		var drawContext = analyserNodeCanvas;
